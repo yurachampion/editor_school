@@ -14,6 +14,7 @@ main {
 h1 {
     font-size: 2em;
     margin: 0.67em 0
+    font-family: 'Forma', 'Helvetica Neue', 'Helvetica', Arial, PT Sans, sans-serif;
 }
 
 hr {
@@ -30,8 +31,6 @@ pre {
 a {
     background-color: transparent
 }
-
-
 
 img {
     border-style: none
@@ -1270,8 +1269,13 @@ main {
     margin-right: 1em
 }
 
-.tmp-header .logo {
+.tmp-header {
     display: flex;
+    align-items: flex-start
+}
+
+.tmp-header .logo {
+    display: flex;  
     align-items: flex-start;
     border: none
 }
@@ -1360,4 +1364,3 @@ main {
     --ids__outline-RGB: var(--ids__surface-RGB)
 }
 
-/*# sourceMappingURL=main.b3477019.css.map*/
