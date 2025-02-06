@@ -1081,14 +1081,6 @@ img {
     border-bottom: none
 }
 
-.ids .pswp button {
-    background-color: transparent
-}
-
-.ids .pswp button:hover {
-    background-color: transparent
-}
-
 .ids__divider-line {
     display: block;
     width: 100%;
