@@ -1364,3 +1364,29 @@ main {
     background-color: #d84315; /* Еще темнее при нажатии */
     transform: scale(0.95); /* Легкое сжатие при клике */
 }
+
+@media screen and (max-width: 767px) {
+    .flex-container {
+        flex-direction: column; /* Ставим элементы в столбик */
+        align-items: center; /* Центрируем текст и картинку */
+        text-align: left; /* Выравнивание текста */
+    }
+
+    .flex-text {
+        max-width: 100%; /* Даем тексту больше места */
+        padding: 0 15px; /* Добавляем боковые отступы */
+    }
+
+    .flex-image {
+        max-width: 70%; /* Ограничиваем ширину картинки */
+        margin: 20px 0; /* Добавляем отступ сверху и снизу */
+    }
+
+    .buy-button {
+        width: 90%; /* Широкая, но не на всю ширину */
+        max-width: 300px; /* Ограничение максимальной ширины */
+        padding: 14px; /* Увеличиваем размер */
+        font-size: 18px; /* Чуть больше текста */
+        border-radius: 50px; /* Оставляем округлость */
+    }
+}
