@@ -14,7 +14,7 @@ main {
 h1 {
     font-size: 2em;
     margin: 0.67em 0
-    font-family: 'Forma', 'Helvetica Neue', 'Helvetica', Arial, PT Sans, sans-serif;
+   
 }
 
 hr {
@@ -36,6 +36,10 @@ img {
     border-style: none
 }
 
+img {
+    display: block;
+    width: 100%;
+}
 
 @font-face {
     font-family: "Root UI";
