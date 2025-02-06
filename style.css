@@ -84,6 +84,28 @@ img {
     border-radius: calc(.3em / 3)
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+.flex-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 50%; /* Ограничиваем ширину текста */
+}
+
+.flex-image {
+    max-width: 50%;
+    height: auto;
+    margin-left: 20px; /* Отступ слева */
+}
+
+
 .ids__stack.XS,.ids__stack-XS {
     height: calc(var(--ids__density) * 1em)
 }
@@ -693,61 +715,6 @@ img {
     border-color: rgba(var(--ids__success-RGB), 0.3)
 }
 
-.ids button,.ids a.ids__button-link {
-    border: 0;
-    background-color: RGB(var(--ids__accent-RGB));
-    color: RGB(var(--ids__on-accent-RGB));
-    border-radius: .3em;
-    padding: calc(var(--ids__density) * 1em / 3) calc(var(--ids__density) * 1em) calc(var(--ids__density) * 1em / 2.5);
-    line-height: var(--ids__density);
-    white-space: nowrap;
-    cursor: pointer
-}
-
-.ids button.XS,.ids button.size-XS,.ids a.ids__button-link.XS,.ids a.ids__button-link.size-XS {
-    font-size: 0.6em;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding-top: calc(var(--ids__density) * 1em / 2.5)
-}
-
-.ids button.S,.ids button.size-S,.ids a.ids__button-link.S,.ids a.ids__button-link.size-S {
-    font-size: 0.8em
-}
-
-.ids button.L,.ids button.size-L,.ids a.ids__button-link.L,.ids a.ids__button-link.size-L {
-    font-size: 1.5em;
-    padding: calc(var(--ids__density) * 1em / 5) calc(var(--ids__density) * 1em / 1.5) calc(var(--ids__density) * 1em / 4)
-}
-
-.ids button.XL,.ids button.size-XL,.ids a.ids__button-link.XL,.ids a.ids__button-link.size-XL {
-    font-size: 2.5em;
-    padding: calc(var(--ids__density) * 1em / 5) calc(var(--ids__density) * 1em / 1.5) calc(var(--ids__density) * 1em / 4)
-}
-
-.ids button:hover,.ids a.ids__button-link:hover {
-    background-color: rgba(var(--ids__accent-RGB), 0.8)
-}
-
-.ids button:focus,.ids a.ids__button-link:focus {
-    box-shadow: 0 0 0 5px RGB(var(--ids__outline-RGB));
-    outline: none
-}
-
-.ids button:disabled,.ids a.ids__button-link:disabled {
-    opacity: 0.15;
-    cursor: default;
-    pointer-events: none
-}
-
-.ids button:disabled:hover,.ids a.ids__button-link:disabled:hover {
-    background-color: RGB(var(--ids__accent-RGB))
-}
-
-.ids a.ids__button-link {
-    display: inline-block
-}
-
 .ids .ids__form-field {
     margin-bottom: calc(var(--ids__density) * 1em)
 }
@@ -756,7 +723,7 @@ img {
     width: 100%;
     padding: calc(var(--ids__density) * 1em / 3) calc(var(--ids__density) * 1em) calc(var(--ids__density) * 1em / 2.5);
     padding-left: calc(var(--ids__density) * 1em / 2);
-    border: 1px solid RGB(var(--ids__text-RGB));
+    border: 1px solid RGB(var(--ids__text-RGB));    
     border-bottom: 2px solid RGB(var(--ids__text-RGB));
     border-radius: .3em;
     background: transparent;
@@ -1368,3 +1335,40 @@ main {
     --ids__outline-RGB: var(--ids__surface-RGB)
 }
 
+.flex-container p {
+    margin-top: 4px;  /* Уменьшаем отступ между заголовком и текстом */
+    margin-bottom: 20px; /* Увеличиваем отступ между абзацами */
+}
+
+.flex-container h2,
+.flex-container h3 {
+    margin-bottom: 5px; /* Уменьшаем отступ между заголовком и текстом */
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    max-width: 200px; /* Ограничиваем максимальную ширину */
+    padding: 12px 20px;
+    margin-top: 15px; /* Отступ сверху */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background-color: #ff5722; /* Оранжевый цвет */
+    border: none;
+    border-radius: 50px; /* Округляем кнопку */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-family: inherit; /* Наследуем шрифт от родителя */
+}
+
+.buy-button:hover {
+    background-color: #e64a19; /* Чуть темнее при наведении */
+    transform: scale(1.05); /* Небольшое увеличение при наведении */
+}
+
+.buy-button:active {
+    background-color: #d84315; /* Еще темнее при нажатии */
+    transform: scale(0.95); /* Легкое сжатие при клике */
+}
