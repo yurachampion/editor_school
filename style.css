@@ -41,6 +41,7 @@ img {
     width: 100%;
 }
 
+
 @font-face {
     font-family: "Root UI";
     font-weight: 400;
@@ -1389,4 +1390,19 @@ main {
         font-size: 18px; /* Чуть больше текста */
         border-radius: 50px; /* Оставляем округлость */
     }
+}
+
+.site-identity h1 a img {
+    font-size: 1em;
+    display: inline-block;
+    color: #000000;
+    height: 250px;
+   
+  }
+
+.site-identity img {
+    display: block;
+    max-height: 80px; /* Устанавливаем максимальную высоту логотипа */
+    width: auto; /* Сохраняем пропорции */
+    margin: 0 auto; /* Центрируем изображение */
 }
